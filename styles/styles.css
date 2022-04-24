@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
+
+/* Base Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #333333;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  background-image: url("https://images.unsplash.com/photo-1649823251007-ecf1aba15919?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+  background-repeat: repeat-x;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: #396684;
+}
+
+/* Container */
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+}
+
+/* Header */
+
+.header {
+  background: url("https://images.unsplash.com/photo-1637142375182-2c378fcbe061?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+  color: white;
+  padding: 3rem;
+  margin-top: -3rem;
+}
+
+.header__title {
+  font-family: "Bungee", cursive;
+  font-size: 6rem;
+  color: rgba(75, 74, 74, 0.826);
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.9);
+}
+
+.header__subtitle {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: -40px;
+  color: #898989;
+}
+
+/* Actions Bar */
+
+.actions {
+  background-color: #2d3132;
+  border-bottom: 1px solid #dedfe0;
+  padding: 0.8rem;
+}
+
+.actions__container {
+  align-items: center;
+  display: flex;
+  max-width: 60rem;
+  margin: 0 auto;
+  min-height: 3rem;
+  padding: 0 1.6rem;
+}
+
+.actions__container--spaced {
+  justify-content: space-between;
+}
+
+/* Form Inputs */
+
+.input {
+  background-color: transparent;
+  border: 0px solid;
+  border-bottom: 2px solid #898989;
+  color: #ccc;
+  font-size: 1.4rem;
+  font-weight: 300;
+  height: 3rem;
+  margin-right: 0.8rem;
+  padding: 0.4rem 0.8rem;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.dropdown {
+  background-color: transparent;
+  border: 0px solid;
+  border-bottom: 2px solid #898989;
+  color: rgb(148, 147, 147);
+  font-size: 1.4rem;
+  font-weight: 300;
+  height: 3rem;
+  margin-right: 0.8rem;
+}
+
+.button {
+  background: #4a5156;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 1rem 1.5rem;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #ba75c1;
+}
+
+.button--secondary {
+  background: #888888;
+  border-bottom: 2px solid #717171;
+}
+
+.button--secondary:hover {
+  background: #6e6e6e;
+}
+
+/* Note editor */
+
+.title-input {
+  border: 1px solid #dedfe0;
+  font-size: 2rem;
+  font-weight: 300;
+  display: block;
+  margin: 2.4rem 0;
+  padding: 0.8rem;
+  width: 100%;
+}
+
+.body-input {
+  border: 1px solid #dedfe0;
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 300;
+  display: block;
+  margin: 2.4rem 0;
+  min-height: 15rem;
+  padding: 0.8rem;
+  width: 100%;
+}
+
+/* Note List Item */
+
+.list-item {
+  text-decoration: none;
+  color: #333333;
+  background: #f7f7f7;
+  border: 1px solid #dedfe0;
+  margin: 1.6rem 0;
+  padding: 1.6rem;
+  display: block;
+  transition: background 0.3s ease;
+}
+
+.list-item:hover {
+  background: #eeeeee;
+}
+
+.list-item__title {
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+  font-family: "Merriweather", serif;
+}
+
+.list-item__subtitle {
+  margin-top: 2rem;
+  color: #666;
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.empty-message {
+  text-align: center;
+  margin: 3.2rem 0;
+}
